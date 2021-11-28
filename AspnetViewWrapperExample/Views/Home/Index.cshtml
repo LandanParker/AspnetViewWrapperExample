@@ -1,0 +1,13 @@
+﻿@using Microsoft.AspNetCore.Mvc.Razor
+@using AspnetViewWrapperExample
+@using Microsoft.AspNetCore.Html
+
+@model string
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    @(new HtmlString(Model))
+}

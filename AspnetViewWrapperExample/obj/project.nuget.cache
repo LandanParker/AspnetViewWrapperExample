@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "V+FjHJDb9XLqI68Q0RUu7V6Kvv+AGk+5m33m8ulh3Buc2uMT2WtjmZQXost6/GI1f2SP/vGMYXAfGDL237JElQ==",
+  "success": true,
+  "projectFilePath": "E:\\ExperimentalDev\\AspTesting\\AspnetViewWrapper\\AspnetViewWrapperExample\\AspnetViewWrapperExample\\AspnetViewWrapperExample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Home PC\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0\\microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\microsoft.codeanalysis.common\\3.6.0\\microsoft.codeanalysis.common.3.6.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.6.0\\microsoft.codeanalysis.csharp.3.6.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\razorengine.netcore\\3.1.0\\razorengine.netcore.3.1.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.0\\system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
+    "C:\\Users\\Home PC\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
