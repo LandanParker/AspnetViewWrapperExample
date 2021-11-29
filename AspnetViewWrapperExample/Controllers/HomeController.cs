@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using AspnetViewWrapperExample.Elements;
+using AspnetViewWrapperExample.Lib.Elements.ElementDevices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AspnetViewWrapperExample.Models;
@@ -34,16 +35,12 @@ namespace AspnetViewWrapperExample.Controllers
 
         public IActionResult Index([FromServices] RazorServiceImpl impl)
         {
-            string template = "nothing";
-
-            TagElement test = new TagElement{Tag = "div"};
+            NodeElement test = new NodeElement{Tag = "div"};
                 
             TestClass obj = new TestClass {Value = $"some value: {DateTime.UtcNow.Second}"};
-            TestClass obj2 = new TestClass {Value = $"another value: {DateTime.UtcNow.Second}"};
-            TestClass obj3 = new TestClass {Value = $"another 2value: {DateTime.UtcNow.Second}"};
             
             test.AssignRoot()
-                .AddChild(out TagElement subElement, e =>
+                .AddChild(out NodeElement subElement, e =>
                 {
                     e.Tag = "div";
                     e.SetDataContainer(obj);
@@ -53,12 +50,14 @@ namespace AspnetViewWrapperExample.Controllers
                     styles.AddStyle("background-color",$"rgb({new Random().Next(255)},{new Random().Next(255)},{new Random().Next(255)})");
                 });
 
-            int total = new Random().Next(5);
+            int total = new Random().Next(5)+1;
 
+            var nodes = new NodeElement[total];
+            
             for (int i = 0; i < total; i++)
             {
                 TestClass obji = new TestClass {Value = $"item: {i} {DateTime.UtcNow.Second}"};
-                test.AddChild(out TagElement iterated, e =>
+                test.AddChild(out nodes[i], e =>
                 {
                     e.Tag = "div";
                     e.SetDataContainer(obji);
@@ -67,8 +66,24 @@ namespace AspnetViewWrapperExample.Controllers
                     classes.addClass = "someclass";
                     styles.AddStyle("background-color",$"rgb({new Random().Next(255)},{new Random().Next(255)},{new Random().Next(255)})");
                 });
-                iterated.SetContent(nameof(obji.Value));
+                nodes[i].SetContent(nameof(obji.Value));
             }
+            
+            nodes[total-1].AddChild(out SoleElement sole2, e =>
+            {
+                e.Tag = "input";
+                e.WithStyles(out Styles styles);
+                styles.AddStyle("color", "red")
+                    .AddStyle("background-color", "white");
+            });
+
+            test.AddChild(out SoleElement sole, e =>
+            {
+                e.Tag = "input";
+                e.WithStyles(out Styles styles);
+                styles.AddStyle("color", "black")
+                    .AddStyle("background-color", "white");
+            });
 
             subElement.SetContent(nameof(obj.Value));
             
@@ -77,6 +92,8 @@ namespace AspnetViewWrapperExample.Controllers
             string resp = impl.RazorEngineService.RunCompile(test.ToString(), $"{test.ToString().GetHashCode()}", null, test); 
 
             ViewData.Model = resp;
+
+            Func<ViewResult> hold = View;
             
             return View();
         }
