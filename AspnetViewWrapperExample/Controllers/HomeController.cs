@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using AspnetViewWrapperExample.Elements;
+using AspnetViewWrapperExample.Lib.Elements;
 using AspnetViewWrapperExample.Lib.Elements.ElementDevices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

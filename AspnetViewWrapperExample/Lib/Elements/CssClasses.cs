@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using AspnetViewWrapperExample.Elements;
 
-namespace AspnetViewWrapperExample.Elements
+namespace AspnetViewWrapperExample.Lib.Elements
 {
     public class CssClasses : IAttribute
     {

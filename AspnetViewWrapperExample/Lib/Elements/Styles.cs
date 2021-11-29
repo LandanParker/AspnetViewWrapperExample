@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data.SqlTypes;
 using System.Linq;
+using AspnetViewWrapperExample.Elements;
 
-namespace AspnetViewWrapperExample.Elements
+namespace AspnetViewWrapperExample.Lib.Elements
 {
     public class Styles : IAttribute
     {

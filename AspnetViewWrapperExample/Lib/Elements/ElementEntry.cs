@@ -1,4 +1,6 @@
-﻿namespace AspnetViewWrapperExample.Elements
+﻿using AspnetViewWrapperExample.Elements;
+
+namespace AspnetViewWrapperExample.Lib.Elements
 {
     public class ElementEntry
     {

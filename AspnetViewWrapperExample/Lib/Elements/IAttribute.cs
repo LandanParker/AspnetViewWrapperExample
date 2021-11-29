@@ -1,4 +1,4 @@
-﻿namespace AspnetViewWrapperExample.Elements
+﻿namespace AspnetViewWrapperExample.Lib.Elements
 {
     public interface IAttribute
     {

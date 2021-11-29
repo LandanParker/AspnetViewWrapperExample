@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Dynamic;
 using System.Reflection;
+using AspnetViewWrapperExample.Lib.Elements;
 using Microsoft.AspNetCore.Html;
 
 namespace AspnetViewWrapperExample.Elements
@@ -33,12 +34,12 @@ namespace AspnetViewWrapperExample.Elements
 
         public Dictionary<string, IAttribute> GetTagSpaceContent() => TagSpaceContent ??= new Dictionary<string, IAttribute>();
 
-        public Styles Styles
+        protected Styles Styles
         {
             get => _styles;
             set => _styles = (Styles) (GetTagSpaceContent()["Styles"] = value);
         }
-        public CssClasses Classes
+        protected CssClasses Classes
         {
             get => _classes;
             set => _classes = (CssClasses) (GetTagSpaceContent()["Class"] = value);
@@ -118,6 +119,6 @@ namespace AspnetViewWrapperExample.Elements
             return (T)this;
         }
 
-        public IList<SourceElement> Children { get; set; }
+        public IList<SourceElement>? Children { get; set; }
     }
 }

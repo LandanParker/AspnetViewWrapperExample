@@ -65,18 +65,13 @@ namespace AspnetViewWrapperExample.Lib.Elements.ElementDevices
             get
             {
                 RenderContentArray[0] = $"<{TagSpaceContentsAsString}>";
-                RenderContentArray[1] = BeforeContent;
+                RenderContentArray[1] = BeforeContent!;
                 RenderContentArray[2] = ChildContentOrNullAsString;
-                RenderContentArray[3] = AfterContent;
+                RenderContentArray[3] = AfterContent!;
                 RenderContentArray[4] = $"</{Tag}>";
 
                 return string.Join("", RenderContentArray.Where(e => !string.IsNullOrEmpty(e)));
             }
         }
-    }
-
-    public class SoleElement : SourceElement<SoleElement>
-    {
-        public override string RenderedContent => $@"<{TagSpaceContentsAsString}/>";
     }
 }
