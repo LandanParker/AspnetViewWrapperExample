@@ -1,5 +1,9 @@
-For those that are curious
-This project is a prototype of building Views programmatically using the RazorViewEngine.
+<h1>View Wrapper</h1>
+<br/>
+Programmatical Razor Template Idea.
+
+For those that are curious,
+this project is a prototype of building Views programmatically using the RazorViewEngine.
 
 *Goals:*
 <br/>
@@ -16,3 +20,4 @@ If you make a hash to use as a template key, you're literally spending the time 
 
 There's no license on this project yet.
 If you understand how this works, you can type it yourself for now. Sorry lol.
+This is an idea. Not proprietary. If I make a framework out of it, you'll know.
