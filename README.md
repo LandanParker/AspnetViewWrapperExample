@@ -20,4 +20,4 @@ If you make a hash to use as a template key, you're literally spending the time 
 
 There's no license on this project yet.
 If you understand how this works, you can type it yourself for now. Sorry lol.
-This is an idea. Not proprietary. If I make a framework out of it, you'll know.
+This is a general idea. Not proprietary. If I make a framework out of it, you'll know.
